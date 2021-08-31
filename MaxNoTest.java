@@ -1,7 +1,8 @@
 public class MaxNoTest {
 
-    public static Integer findMax(Integer a, Integer b, Integer c) {
-        Integer max = a;
+    //returns the max value of three floats
+    public static Float findMax(Float a, Float b, Float c) {
+        Float max = a;
         if(b.compareTo(max)> 0)
             max = b;
         if(c.compareTo(max)>0)
@@ -11,15 +12,15 @@ public class MaxNoTest {
     }
     public static void main(String[] args) {
         //TC1.1 max no. at first
-        Integer int1 = 89,int2 = 85,int3 = 26;
-        Integer max = findMax(int1,int2,int3);
+        Float float1 = 55.65f, float2 = 55.7f,float3 = 55.90f;
+        Float max = findMax(float1,float2,float3);
 
         //TC1.2 max no. at second
-        Integer int4 = 37,int5 = 65,int6 = 56;
-        Integer max1 = findMax(int4,int5,int6);
+        Float float4 = 37.56f,float5 = 65.23f,float6 = 56.125f;
+        float max1 = findMax(float4,float5,float6);
 
         //TC1.3 max no. at third
-        Integer int7 = 36,int8 = 75,int9 = 96;
-        Integer max2 = findMax(int7,int8,int9);
+        Float float7 = 36f,float8 = 75f,float9 = 96f;
+        float max2 = findMax(float7,float8,float9);
     }
 }
