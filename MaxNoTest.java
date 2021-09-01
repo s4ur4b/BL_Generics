@@ -63,28 +63,10 @@ public class MaxNoTest<T extends Comparable<T>> {
     }
 
     //displays maximum of three values
-    public static Integer printMax(Integer[] someArray) {
+    static <T extends Comparable<T>> T printMax(T[] inputArray) {
 
-        Integer max = someArray[0];
-        for (Integer t : someArray) {
-            if (t.compareTo(max) > 0)
-                max = t;
-        }
-        return max;
-    }
-    public static Float printMax(Float[] someArray) {
-
-        Float max = someArray[0];
-        for (Float t : someArray) {
-            if (t.compareTo(max) > 0)
-                max = t;
-        }
-        return max;
-    }
-    public static String printMax(String[] someArray) {
-
-        String max = someArray[0];
-        for (String t : someArray) {
+        T max = inputArray[0];
+        for (T t : inputArray) {
             if (t.compareTo(max) > 0)
                 max = t;
         }
